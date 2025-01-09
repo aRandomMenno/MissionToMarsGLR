@@ -1,0 +1,4 @@
+nav ul li:nth-child(2) {
+    background-color: var(--color-nav_inactive);
+    cursor: default;
+}
