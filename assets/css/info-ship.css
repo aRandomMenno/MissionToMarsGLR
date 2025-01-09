@@ -1,4 +1,43 @@
+main {
+    overflow: auto;
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+}
+
 nav ul li:nth-child(2) {
     background-color: var(--color-nav_inactive);
     cursor: default;
+}
+
+table {
+    border-collapse: separate;
+    width: 100%;
+}
+
+table tr td:nth-child(odd) {
+    color: var(--color-table_odd);
+    font-weight: 700;
+}
+
+td {
+    padding: 0.3em;
+}
+
+.ship-info {
+    padding: 0.6em;
+    border: 0.2em solid rgb(40, 40, 40);
+    background-color: var(--color-content);
+    border-radius: 1.2em;
+    width: 60%;
+    height: fit-content;
+}
+
+.ship-functions {
+    padding: 0.6em;
+    border: 0.2em solid rgb(40, 40, 40);
+    background-color: var(--color-content);
+    border-radius: 1.2em;
+    width: 40%;
+    height: fit-content;
 }

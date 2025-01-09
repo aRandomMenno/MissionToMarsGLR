@@ -1,8 +1,13 @@
 /* 
-!!! Niet dit bestand aanpassen, dit is een belangrijk bestand voor de opmaak van de pagina's.
-!!! Als je deze aanpast, kan het zijn dat de opmaak van de pagina's niet meer goed werkt.
-!!! Want alle pagina's gebruiken dit bestand voor de opmaak.
+!!!! Niet dit bestand aanpassen, dit is een belangrijk bestand voor de opmaak van de pagina's.
+!!!! Als je deze aanpast, kan het zijn dat de opmaak van de pagina's niet meer goed werkt.
+!!!! Want alle pagina's gebruiken dit bestand voor de opmaak.
 */
+
+@font-face {
+    font-family: 'Azeret Mono';
+    src: url('../font/Azeret-Mono.ttf') format('truetype');
+}
 
 :root {
     --color-primary: #4e76c1;
@@ -15,6 +20,8 @@
 
     --color-main: #2d4dff;
     --color-content: rgba(45, 45, 45, 0.8);
+
+    --color-table_odd: rgb(24, 211, 0);
 
     --color-text: #f4f4f4;
     --color-text-dark: #f8f9fa;
@@ -31,7 +38,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Azeret Mono', monospace;
     font-weight: 500;
     color: #f4f4f4;
     background-color: #ffffff;
@@ -39,7 +46,8 @@ body {
 
 body {
     display: flex;
-    gap: 2.5em;
+    gap: 1.8em;
+    font-size: 1rem;
 }
 
 nav {
@@ -48,10 +56,10 @@ nav {
     border-bottom: 0.2em solid rgb(40, 40, 40);
     background-color: var(--color-nav);
     display: block;
-    width: max(calc(300px + 3em), 35%);
-    margin-top: 2em;
+    width: max(calc(300px + 2em), 30%);
+    margin-top: 1.5em;
     border-top-right-radius: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     border-bottom-right-radius: 2em;
     box-shadow: #000 0 0 1em;
 }
@@ -63,12 +71,13 @@ main {
     background-color: var(--color-main);
     display: block;
     width: 100%;
-    margin-top: 2em;
+    margin-top: 1.5em;
     border-top-left-radius: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     border-bottom-left-radius: 2em;
     box-shadow: #000 0 0 1em;
-    background: url(../images/space-background.webp) no-repeat center;
+    background: url(../images/space.gif) repeat center center fixed;
+    background-size: 384px 384px;
 }
 
 nav ul {
@@ -79,9 +88,9 @@ nav ul {
 }
 
 nav ul li {
-    margin: 2em;
-    border-radius: 1.5em;
-    padding: 1em;
+    margin: 0.6em;
+    border-radius: 1em;
+    padding: 0.6em;
     border: 0.2em solid rgb(40, 40, 40);
     text-align: center;
     transition: background-color 500ms ease;
@@ -90,14 +99,4 @@ nav ul li {
 nav ul li:hover {
     background-color: var(--color-nav_item-hover);
     cursor: pointer;
-}
-
-.ship-info {
-    margin: 0.8em;
-    padding: 0.6em;
-    border: 0.2em solid rgb(40, 40, 40);
-    background-color: var(--color-content);
-    border-radius: 1.2em;
-    width: 40em;
-    height: 20em;
 }
