@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../assets/css/pages.css">
         <link rel="stylesheet" href="../assets/css/travel-info.css">
         <script src="../assets/js/inactive.js" defer></script>
+        <script src="../assets/js/distance.js"></script>
 
         <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
         <link rel="apple-touch-icon" href="../assets/logo.png">
@@ -25,7 +26,84 @@
             </ul>
         </nav>
         <main>
-
+            <div class="flight-info">
+                <h1>Vluchtinformatie</h1>
+                <table>
+                    <tr>
+                        <td>Afstand tot mars</td>
+                        <td id="distance-ship-mars"></td>
+                    </tr>
+                    <tr>
+                        <td>Snelheid van het ruimteschip</td>
+                        <td id="speed"></td>
+                        <script>
+                            function updateSpeed() {
+                                document.getElementById('speed').innerText = `~${(Math.random() * 300 + 773700).toFixed(0)} km/u`;
+                            }
+                            setInterval(updateSpeed, 1000);
+                        </script>
+                    </tr>
+                </table>
+            </div>
+            <div class="mars-info">
+                <h1>Feitjes over Mars</h1>
+                <p>
+                    Mars is de vierde planeet vanaf de zon in ons zonnestelsel en is de op één na kleinste
+                    planeet. Mars is vernoemd naar de Romeinse god van de oorlog. Mars is een rotsachtige
+                    planeet met een dunne atmosfeer, met kenmerken die lijken op zowel de impactkraters van de
+                    maan als de vulkanen, valleien, woestijnen en poolkappen van de aarde. De rode kleur is
+                    het gevolg van ijzeroxide (roest) op het oppervlak van Mars. Mars heeft twee manen, Phobos
+                    en Deimos, die kleine en onregelmatig gevormde lichamen zijn die waarschijnlijk gevangen
+                    asteroïden zijn.
+                </p>
+            </div>
+            <div class="travel-info">
+                <h1>Reisinformatie</h1>
+                <table>
+                    <tr>
+                        <td>Verwachte aankomst</td>
+                        <td>13/06/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Bestemming</td>
+                        <td>Mars</td>
+                    </tr>
+                    <tr>
+                        <td>Reisduur</td>
+                        <td>10 maanden</td>
+                    </tr>
+                    <tr>
+                        <td>Reisafstand</td>
+                        <td>225 miljoen kilometer</td>
+                    </tr>
+                    <tr>
+                        <td>Reisomstandigheden</td>
+                        <td>De reis zal voornamelijk bestaan uit een constante snelheid van 100.000 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Communicatie</td>
+                        <td>Er is geen communicatie mogelijk tussen aarde en het ruimteschip voor
+                            passagiers</td>
+                    </tr>
+                    <tr>
+                        <td>Entertainment</td>
+                        <td>Entertainment systeem met films, muziek, digitale boeken en games. VR Holodeck,
+                            Fitnessruimte</td>
+                    </tr>
+                    <tr>
+                        <td>Voedsel</td>
+                        <td>Voedsel voorraad voor 10 maanden</td>
+                    </tr>
+                    <tr>
+                        <td>Medisch</td>
+                        <td>Medische diagnostische faciliteit en behandelcentrum</td>
+                    </tr>
+                    <tr>
+                        <td>Lucht en water filter</td>
+                        <td>Verfijnd gesloten lucht- en water recyclingsysteem met 99,7% efficiëntie</td>
+                    </tr>
+                </table>
+            </div>
         </main>
     </body>
 </html>
