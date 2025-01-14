@@ -58,4 +58,6 @@ td {
     height: calc(100% - 1em);
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+
+    overflow: scroll;
 }
