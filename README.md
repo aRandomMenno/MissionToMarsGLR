@@ -1,9 +1,14 @@
 
-# This repository was made for a school project.
+# Mission to Mars - In-Flight Entertainment System
 
-You shouldn't take this code too seriously.
-De opdracht is fictie en puur om te leren.
+> Deze repository is gemaakt voor een schoolproject.
+> De opdracht is fictie en puur om te leren.
 
-## Project: Mission to Mars
+## De opdracht?
 
 We moeten het in flight entertainment system maken voor de eerste raket die naar mars zou gaan.
+
+## Teamgenoten
+
+[Mark](https://github.com/101942glr)
+[Soufiane](https://github.com/Soufiane-elB)
