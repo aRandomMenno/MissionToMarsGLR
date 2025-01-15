@@ -59,8 +59,6 @@ function doRectanglesOverlap(rect1, rect2) {
     return !(rect1.left > rect2.right || rect1.right < rect2.left || rect1.top > rect2.bottom || rect1.bottom < rect2.top);
 }
 
-// ...existing code...
-
 window.onload = function () {
     let frequents = localStorage.getItem('frequents');
     if (frequents === null) {
@@ -71,16 +69,14 @@ window.onload = function () {
     }
 
     let frequentsList = document.getElementById('frequents');
-    frequentsList.style.position = 'relative'; // Add this line to set the parent div's position to relative
+    frequentsList.style.position = 'relative';
     let sortedPages = Object.keys(frequents).sort((a, b) => frequents[b] - frequents[a]).slice(0, 4);
 
     for (let page of sortedPages) {
         let button = document.createElement('button');
         button.innerHTML = pageNames[page] || page;
         button.setAttribute('class', 'frequent');
-        button.onclick = function () {
-            page(page);
-        };
+        button.onclick = "page('page')";
 
         const frequentsWidth = frequentsList.offsetWidth;
         const frequentsHeight = frequentsList.offsetHeight;
@@ -106,6 +102,9 @@ window.onload = function () {
                 button.style.position = 'absolute';
                 button.style.left = `${x}px`;
                 button.style.top = `${y}px`;
+                // button.onclick = function () {
+                //     page(page);
+                // };
                 buttonPositions.push(position);
                 break;
             }
