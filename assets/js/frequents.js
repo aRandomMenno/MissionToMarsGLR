@@ -10,7 +10,7 @@ const pageNames = {
     'vr-holodeck': 'VR-holodeck'
 };
 
-function page(page) {
+function pager(page) {
     let frequents = localStorage.getItem('frequents');
     if (frequents === null) {
         console.warn('no frequents created yet, creating them!');
@@ -59,7 +59,7 @@ function doRectanglesOverlap(rect1, rect2) {
     return !(rect1.left > rect2.right || rect1.right < rect2.left || rect1.top > rect2.bottom || rect1.bottom < rect2.top);
 }
 
-window.onload = function () {
+window.onload = () => {
     let frequents = localStorage.getItem('frequents');
     if (frequents === null) {
         console.warn('no frequents created yet, creating them!');
@@ -76,7 +76,7 @@ window.onload = function () {
         let button = document.createElement('button');
         button.innerHTML = pageNames[page] || page;
         button.setAttribute('class', 'frequent');
-        button.onclick = "page('page')";
+        button.addEventListener('click', function () { pager(page); });
 
         const frequentsWidth = frequentsList.offsetWidth;
         const frequentsHeight = frequentsList.offsetHeight;
