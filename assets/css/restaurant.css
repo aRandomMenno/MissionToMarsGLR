@@ -26,14 +26,11 @@ p {
     object-fit: cover;
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /* transition: width 500ms ease, height 500ms ease; */
     transition: transform 600ms ease;
     cursor: pointer;
     border: 2px solid white;
 }
 
 #ochtend:hover, #middag:hover, #avond:hover, #drinken:hover {
-    /* width: 520px;
-    height: 320px; */
     transform: scale(1.1);
 }
