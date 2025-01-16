@@ -16,13 +16,11 @@
     --color-tertiary: #8f4ea2;
 
     --color-nav: #d36d2a;
-    --color-nav_current: #c55728;
-    --color-nav_hover: #e54529;
+    --color-nav_current: #b64718;
+    --color-nav_hover: #f8492a;
 
-    --color-main: #c9450d;
+    --color-main: #bb430f;
     --color-content: rgba(45, 45, 45, 0.8);
-
-    --color-table_odd: rgb(24, 211, 0);
 
     --color-text: #f4f4f4;
     --color-text-dark: #f8f9fa;

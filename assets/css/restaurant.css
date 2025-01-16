@@ -12,6 +12,11 @@ p {
     margin: 1em;
 }
 
+nav ul li:nth-child(2) {
+    background-color: var(--color-nav_current);
+    cursor: default;
+}
+
 #ochtend_wrap, #middag_wrap, #avond_wrap, #drinken_wrap {
     display: flex;
     flex-direction: column;
