@@ -17,7 +17,7 @@ nav ul li:nth-child(2) {
     cursor: default;
 }
 
-#wrap_tic-tac-toe {
+#wrap_tic-tac-toe, #wrap_minesweeper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +25,7 @@ nav ul li:nth-child(2) {
     margin: 2em;
 }
 
-#tic-tac-toe {
+#tic-tac-toe, #minesweeper {
     width: 400px;
     height: 400px;
     object-fit: cover;
@@ -36,6 +36,6 @@ nav ul li:nth-child(2) {
     border: 2px solid white;
 }
 
-#tic-tac-toe:hover {
+#tic-tac-toe:hover, #minesweeper:hover {
     transform: scale(1.1);
 }
