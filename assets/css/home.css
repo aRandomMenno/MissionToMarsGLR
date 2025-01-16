@@ -2,7 +2,7 @@ main {
     border: 0.2em solid rgb(40, 40, 40);
     background-color: var(--color-main);
     width: 100%;
-    margin: 1.5em;
+    margin: 1em;
     padding: 1em;
     border-radius: 2em;
     box-shadow: #000 0 0 1em;
@@ -11,6 +11,8 @@ main {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 1em;
+
+    font-size: 1.2rem;
 }
 
 button {

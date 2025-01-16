@@ -1,8 +1,7 @@
 main {
-    overflow: auto;
     display: flex;
     gap: 2em;
-    padding: 1em;
+    font-size: 1.2rem;
 }
 
 nav ul li:nth-child(2) {
@@ -16,7 +15,7 @@ table {
 }
 
 table tr td:nth-child(odd) {
-    color: var(--color-table_odd);
+    color: var(--color-strong);
     font-weight: 700;
 }
 

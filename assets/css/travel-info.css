@@ -1,11 +1,9 @@
 main {
-    overflow: auto;
-    gap: 2em;
-    padding: 1em;
-
     display: grid;
+    gap: 2em;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    font-size: 1.2rem;
 }
 
 nav ul li:nth-child(3) {
@@ -19,7 +17,7 @@ table {
 }
 
 table tr td:nth-child(odd) {
-    color: var(--color-table_odd);
+    color: var(--color-strong);
     font-weight: 700;
 }
 

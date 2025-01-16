@@ -14,11 +14,11 @@
     --color-secondary: #459e4c;
     --color-tertiary: #8f4ea2;
 
-    --color-nav: #5156ac;
-    --color-nav_current: #523494;
-    --color-nav_hover: #20255c;
+    --color-nav: #d36d2a;
+    --color-nav_current: #c55728;
+    --color-nav_hover: #e54529;
 
-    --color-main: #2d4dff;
+    --color-main: #c9450d;
     --color-content: rgba(45, 45, 45, 0.8);
 
     --color-table_odd: rgb(24, 211, 0);
@@ -26,6 +26,7 @@
     --color-text: #f4f4f4;
     --color-text-dark: #f8f9fa;
 
+    --color-strong: #ff9216;
     --color-success: #28a745;
     --color-error: #dc3545;
 }
@@ -57,9 +58,9 @@ nav {
     background-color: var(--color-nav);
     display: block;
     width: max(calc(300px + 2em), 30%);
-    margin-top: 1.5em;
+    margin-top: 1em;
     border-top-right-radius: 2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     border-bottom-right-radius: 2em;
     box-shadow: #000 0 0 1em;
 }
@@ -70,13 +71,15 @@ main {
     border-bottom: 0.2em solid rgb(40, 40, 40);
     background-color: var(--color-main);
     width: 100%;
-    margin-top: 1.5em;
+    margin-top: 1em;
     border-top-left-radius: 2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     border-bottom-left-radius: 2em;
     box-shadow: #000 0 0 1em;
     background: url(../images/space.gif) repeat center center fixed;
     background-size: 384px 384px;
+    padding: 1em;
+    overflow: auto;
 }
 
 nav ul {
