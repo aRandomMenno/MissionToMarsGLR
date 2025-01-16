@@ -6,6 +6,40 @@ let board = [
 let currentPlayer = 'X';
 let winner = null;
 
+function checkWinnerWithBoard(symbol, testBoard) {
+    for (let i = 0; i < 3; i++) {
+        if (
+            testBoard[i][0] === symbol &&
+            testBoard[i][1] === symbol &&
+            testBoard[i][2] === symbol
+        ) {
+            return true;
+        }
+        if (
+            testBoard[0][i] === symbol &&
+            testBoard[1][i] === symbol &&
+            testBoard[2][i] === symbol
+        ) {
+            return true;
+        }
+    }
+    if (
+        testBoard[0][0] === symbol &&
+        testBoard[1][1] === symbol &&
+        testBoard[2][2] === symbol
+    ) {
+        return true;
+    }
+    if (
+        testBoard[0][2] === symbol &&
+        testBoard[1][1] === symbol &&
+        testBoard[2][0] === symbol
+    ) {
+        return true;
+    }
+    return false;
+}
+
 function playComputer() {
     if (!winner) {
         if (board[1][1] === '') {
@@ -16,12 +50,16 @@ function playComputer() {
         for (let row = 0; row < 3; row++) {
             for (let col = 0; col < 3; col++) {
                 if (board[row][col] === '') {
-                    if (checkWinner(currentPlayer)) {
+                    let boardCopy = board.map(r => r.slice());
+                    boardCopy[row][col] = currentPlayer;
+                    if (checkWinnerWithBoard(currentPlayer, boardCopy)) {
                         play(row, col);
                         return;
                     }
                     let opponent = (currentPlayer === 'X') ? 'O' : 'X';
-                    if (checkWinner(opponent)) {
+                    boardCopy[row][col] = opponent;
+                    if (checkWinnerWithBoard(opponent, boardCopy)) {
+                        boardCopy[row][col] = currentPlayer;
                         play(row, col);
                         return;
                     }
