@@ -9,7 +9,7 @@ const greetings = [
 const groet = greetings.find(g => hours >= g.start && hours < g.end)?.message || "Hallo, ";
 document.getElementById("greet").innerHTML = groet;
 
-const names = ["Menno", "Peta", "Mark", "Jesse", "Jeroen", "Jordy", "Jelle", "Jasper", "Joris", "Soufiane", "Danique", "Lars"];
+const names = ["Menno", "Peta", "Mark", "Jesse", "Jeroen", "Jordy", "Jelle", "Jasper", "Joris", "Soufiane", "Danique", "Lars", "Ivory"];
 const name = names[Math.floor(Math.random() * names.length)];
 document.getElementById("greet").innerHTML += name;
 

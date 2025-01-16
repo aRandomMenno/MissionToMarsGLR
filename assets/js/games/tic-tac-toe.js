@@ -8,33 +8,38 @@ let winner = null;
 
 function playComputer() {
     if (!winner) {
+        if (board[1][1] === '') {
+            play(1, 1);
+            return;
+        }
+
         for (let row = 0; row < 3; row++) {
             for (let col = 0; col < 3; col++) {
                 if (board[row][col] === '') {
-
-                    board[row][col] = 'O';
-                    if (checkWinner('O')) {
+                    if (checkWinner(currentPlayer)) {
                         play(row, col);
                         return;
                     }
-                    board[row][col] = 'X';
-                    if (checkWinner('X')) {
-                        board[row][col] = 'O';
+                    let opponent = (currentPlayer === 'X') ? 'O' : 'X';
+                    if (checkWinner(opponent)) {
                         play(row, col);
                         return;
                     }
-                    board[row][col] = '';
                 }
             }
         }
+
         let row, col;
         do {
             row = Math.floor(Math.random() * 3);
             col = Math.floor(Math.random() * 3);
-        } while (board[row][col] !== '');
+        }
+        while (board[row][col] !== '');
         play(row, col);
     }
+    console.log(board);
 }
+
 function play(row, col) {
     if (board[row][col] === '' && !winner) {
         board[row][col] = currentPlayer;
