@@ -7,7 +7,8 @@ const pageNames = {
     'movies-series': 'Films en series',
     'games': 'Games',
     'music': 'Muziek',
-    'vr-holodeck': 'VR-holodeck'
+    'vr-holodeck': 'VR-holodeck',
+    'wellness-fitness': 'wellness-fitness'
 };
 
 function pager(page) {
@@ -48,6 +49,9 @@ function pager(page) {
             break;
         case 'vr-holodeck':
             window.location.href = './vr-holodeck/';
+            break;
+        case 'wellness-fitness':
+            window.location.href = './wellness-fitness/';
             break;
         default:
             console.warn('Page not found');
