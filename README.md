@@ -8,6 +8,10 @@
 
 We moeten het in flight entertainment system maken voor de eerste raket die naar mars zou gaan.
 
+## Kan ik de "website" bekijken?
+
+ja dat kan [hier](https://101945.stu.sd-lab.nl/missiontomars/)
+
 ## Teamgenoten
 
 [Mark](https://github.com/101942glr)
