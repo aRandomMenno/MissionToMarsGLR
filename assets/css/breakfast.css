@@ -7,6 +7,12 @@ main {
     overflow: auto;
 }
 
+p {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em;
+}
+
 .food {
     display: flex;
     flex-direction: row;
@@ -26,8 +32,8 @@ main {
 
 img {
     border-radius: 16px;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     transition: transform 500ms ease;
     object-fit: cover;
 }
