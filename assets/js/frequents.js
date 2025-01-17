@@ -3,12 +3,12 @@ const maxAttempts = 10;
 const pageNames = {
     'ship-info': 'Schipinformatie',
     'travel-info': 'Reisinformatie',
-    'restaurant': 'Eten en drinken',
-    'movies-series': 'Films en series',
+    'restaurant': 'Eten en Drinken',
+    'movies-series': 'Films en Series',
     'games': 'Games',
     'music': 'Muziek',
-    'vr-holodeck': 'VR-holodeck',
-    'wellness-fitness': 'wellness-fitness'
+    'vr-holodeck': 'VR-Holodeck',
+    'wellness-fitness': 'Wellness en Fitness'
 };
 
 function pager(page) {
@@ -66,7 +66,7 @@ function doRectanglesOverlap(rect1, rect2) {
 window.onload = () => {
     let frequents = localStorage.getItem('frequents');
     if (frequents === null) {
-        console.warn('no frequents created yet, creating them!');
+        console.warn('No frequents created yet, creating them!');
         frequents = {};
     } else {
         frequents = JSON.parse(frequents);
@@ -106,9 +106,6 @@ window.onload = () => {
                 button.style.position = 'absolute';
                 button.style.left = `${x}px`;
                 button.style.top = `${y}px`;
-                // button.onclick = function () {
-                //     page(page);
-                // };
                 buttonPositions.push(position);
                 break;
             }
