@@ -1,4 +1,56 @@
+:root {
+    --color-miss: #6afaff;
+    --color-hit: #f00;
+    --color-hover: #d5ff92;
+}
+
 nav ul li:nth-child(5) {
     background-color: var(--color-nav_current);
     cursor: default;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.miss {
+    background-color: var(--color-miss);
+}
+
+.hit {
+    background-color: var(--color-hit);
+}
+
+#info {
+    width: 100%;
+    text-align: center;
+}
+
+#wrap_boards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#wrap_boards div div div {
+    font-size: 1.2em;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    border-radius: 12px;
+    color: #fff;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+button:hover {
+    background-color: var(--color-nav_hover);
 }

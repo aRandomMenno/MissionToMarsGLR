@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../../assets/css/pages.css">
         <link rel="stylesheet" href="../../assets/css/games/battleships.css">
         <script src="../../assets/js/inactive.js" defer></script>
-        <script src="../../assets/js/games/battleships.js"></script>
+        <script src="../../assets/js/games/battleships.js" defer></script>
 
         <link rel="shortcut icon" href="../../assets/logo.png" type="image/x-icon">
         <link rel="apple-touch-icon" href="../../assets/logo.png">
@@ -26,8 +26,14 @@
                 <li>Zeeslag</li>
             </ul>
         </nav>
-        <main>
-            <div id="board">
+        <main id="main">
+            <div id="info">
+                <h2>Het spel zeeslag</h2>
+                <p>Eerst mag speler 1 zijn/haar boten neerzetten.</p>
+                <p>Dan mag speler 2 zijn/haar boten neerzetten.</p>
+                <button onclick="reset()">Reset spel</button>
+            </div>
+            <div id="wrap_boards">
 
             </div>
         </main>
