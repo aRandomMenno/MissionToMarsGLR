@@ -54,3 +54,7 @@ button {
 button:hover {
     background-color: var(--color-nav_hover);
 }
+
+#status {
+    color: goldenrod;
+}
