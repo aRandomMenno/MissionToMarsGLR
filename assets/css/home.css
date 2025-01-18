@@ -58,9 +58,7 @@ button:hover {
 .extra-info {
     grid-column: 1 / 6;
     grid-row: 3 / 5;
-
     font-size: 1.5rem;
-
     padding: 1em;
     border-radius: 2em;
     background: url(../images/space.gif);
@@ -75,9 +73,11 @@ button:hover {
 .welcome {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    margin: 20px;
 }
 
 .what-todo {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    margin: 20px;
 }
