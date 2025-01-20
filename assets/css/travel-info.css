@@ -6,11 +6,6 @@ main {
     font-size: 1.2rem;
 }
 
-nav ul li:nth-child(3) {
-    background-color: var(--color-nav_current);
-    cursor: default;
-}
-
 table {
     border-collapse: separate;
     width: 100%;

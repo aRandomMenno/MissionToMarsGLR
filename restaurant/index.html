@@ -18,31 +18,34 @@
     <body>
         <nav>
             <ul>
-                <li onclick="window.location.href = '..'">Ga naar Home</li>
-                <li>Restaurant</li>
-                <li onclick="window.location.href = './breakfast/'">Ontbijt</li>
-                <li onclick="window.location.href = './lunch/'">Lunch</li>
-                <li onclick="window.location.href = './dinner/'">Avondeten</li>
-                <li onclick="window.location.href = './drinks/'">Drinken</li>
+                <li><a href="..">Homepagina</a></li>
+                <li><a href="../ship-info/">Schipinformatie</a></li>
+                <li><a href="../travel-info">Reisinformatie</a></li>
             </ul>
         </nav>
         <main>
-            <div id="ochtend_wrap">
-                <img id="ochtend" src="../assets/images/ochtend.png" alt="Ontbijt" onclick="window.location.href = './breakfast/'">
-                <p>Ontbijt</p>
-            </div>
-            <div id="middag_wrap">
-                <img id="middag" src="../assets/images/middag.png" alt="Lunch" onclick="window.location.href = './lunch/'">
-                <p>Lunch</p>
-            </div>
-            <div id="avond_wrap">
-                <img id="avond" src="../assets/images/avond.png" alt="avondeten" onclick="window.location.href = './dinner/'">
-                <p>Avondeten</p>
-            </div>
+            <div id="wrap">
+                <div id="ochtend_wrap">
+                    <img id="ochtend" src="../assets/images/ochtend.png" alt="Ontbijt"
+                        onclick="window.location.href = './breakfast/'">
+                    <p>Ontbijt</p>
+                </div>
+                <div id="middag_wrap">
+                    <img id="middag" src="../assets/images/middag.png" alt="Lunch"
+                        onclick="window.location.href = './lunch/'">
+                    <p>Lunch</p>
+                </div>
+                <div id="avond_wrap">
+                    <img id="avond" src="../assets/images/avond.png" alt="avondeten"
+                        onclick="window.location.href = './dinner/'">
+                    <p>Avondeten</p>
+                </div>
 
-            <div id="drinken_wrap">
-                <img id="drinken" src="../assets/images/drinken.png" alt="drinken" onclick="window.location.href = './drinks/'">
-                <p>Drinken</p>
+                <div id="drinken_wrap">
+                    <img id="drinken" src="../assets/images/drinken.png" alt="drinken"
+                        onclick="window.location.href = './drinks/'">
+                    <p>Drinken</p>
+                </div>
             </div>
         </main>
     </body>

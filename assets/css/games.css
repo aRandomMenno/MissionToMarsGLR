@@ -12,11 +12,6 @@ p {
     margin: 1em;
 }
 
-nav ul li:nth-child(2) {
-    background-color: var(--color-nav_current);
-    cursor: default;
-}
-
 #wrap_tic-tac-toe, #wrap_minesweeper, #wrap_battleships {
     display: flex;
     flex-direction: column;

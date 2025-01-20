@@ -1,5 +1,11 @@
 main {
     display: flex;
+    justify-content: center;
+}
+
+#wrap {
+    width: min(100%, 1600px);
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,11 +16,6 @@ p {
     font-size: 1.5em;
     text-align: center;
     margin: 1em;
-}
-
-nav ul li:nth-child(2) {
-    background-color: var(--color-nav_current);
-    cursor: default;
 }
 
 #ochtend_wrap, #middag_wrap, #avond_wrap, #drinken_wrap {
