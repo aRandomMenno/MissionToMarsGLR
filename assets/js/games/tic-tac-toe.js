@@ -41,6 +41,9 @@ function checkWinnerWithBoard(symbol, testBoard) {
 }
 
 function playComputer() {
+    if (isBoardFull() === true) {
+        reset();
+    }
     if (!winner) {
         if (board[1][1] === '') {
             play(1, 1);
