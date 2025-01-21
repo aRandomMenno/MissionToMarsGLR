@@ -40,3 +40,6 @@ p {
 #ochtend:hover, #middag:hover, #avond:hover, #drinken:hover {
     transform: scale(1.1);
 }
+.body{
+    background-color: #d66a12;
+}

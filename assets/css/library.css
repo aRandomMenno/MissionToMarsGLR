@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d66a12;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+.boek-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boek {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.boek img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.boek button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boek button:hover {
+    background-color: #0056b3;
+}
