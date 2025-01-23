@@ -29,15 +29,18 @@
                 <h1>Muziek Speler</h1>
                 <input type="text" id="search" placeholder="Zoek naar een nummer..." onkeyup="filterSongs()">
                 <ul id="songList">
-                    <li data-song="song1.mp3">Nummer 1</li>
-                    <li data-song="song2.mp3">Nummer 2</li>
-                    <li data-song="song3.mp3">Nummer 3</li>
-                    <li data-song="song4.mp3">Nummer 4</li>
+                    <li data-song="">Augurk</li>
+                    <li data-song="song2.mp3">Hart</li>
+                    <li data-song="song3.mp3">Doe maar liever dan lief</li>
+                    <li data-song="song4.mp3">Bloed zweet en tranen</li>
                 </ul>
-                <audio id="audioPlayer" controls>
-                    <source id="audioSource" src type="audio/mpeg">
-                    Je browser ondersteunt geen audio-element.
-                </audio>
+                <audio controls>
+                    <source src="../assets/media/audio/Augurk.mp3" type="audio/ogg">
+                    <source src="../assets/media/audio/Rob-de-nijs-banger-hart.mp3" type="audio/ogg">
+                    <source src="../assets/media/audio/doe-maar-liever-dan-lief.mp3" type="audio/mpeg">
+                    <source src="../assets/media/audio/andre-hazes-bloed-zweet-tranen.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
             </div>
         </main>
     </body>

@@ -1,0 +1,38 @@
+main {
+    overflow: auto;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em;
+}
+
+.food {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+img {
+    border-radius: 16px;
+    height: 300px;
+    width: 300px;
+    transition: transform 500ms ease;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
