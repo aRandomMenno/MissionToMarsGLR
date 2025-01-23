@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e88709;
     margin: 0;
     padding: 20px;
 }
@@ -19,7 +18,7 @@ h1 {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 500px;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
