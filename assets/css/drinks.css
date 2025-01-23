@@ -1,0 +1,47 @@
+main {
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em;
+}
+
+.drinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.drink {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+img {
+    border-radius: 16px;
+    height: 300px;
+    width: 300px;
+    transition: transform 500ms ease;
+    object-fit: cover;
+}
+
+#why {
+    height: 300px;
+    width: auto;
+}
+
+img:hover {
+    transform: scale(1.1);
+}

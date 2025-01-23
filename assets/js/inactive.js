@@ -12,7 +12,7 @@ html.style.display = 'flex';
 html.style.justifyContent = 'center';
 html.style.alignItems = 'center';
 html.style.zIndex = '999';
-html.innerHTML = '<h1 onmousemove="resetTimer();" onclick="resetTimer();">Ben je er nog?</h1>';
+html.innerHTML = '<h1>Ben je er nog?</h1>';
 
 let timer = 0;
 
