@@ -28,19 +28,16 @@
             <div class="container">
                 <h1>Muziek Speler</h1>
                 <input type="text" id="search" placeholder="Zoek naar een nummer..." onkeyup="filterSongs()">
-                <ul id="songList">
-                    <li data-song="../assets/media/audio/Augurk.mp3">Augurk</li>
-                    <li data-song="../assets/media/audio/Rob-de-nijs-banger-hart.mp3">Hart</li>
-                    <li data-song="../assets/media/audio/doe-maar-liever-dan-lief.mp3">Doe maar liever dan lief</li>
-                    <li data-song="../assets/media/audio/andre-hazes-bloed-zweet-tranen.mp3">Bloed zweet en tranen</li>
+                <ul id="songList">z
+                    <li onclick="changeSong('Augurk.mp3')">Augurk</li>
+                    <li onclick="changeSong('Rob_de_nijs_banger_hart.mp3')">Hart</li>
+                    <li onclick="changeSong('doe_maar_liever_dan_lief.mp3')">Doe maar liever dan lief</li>
+                    <li onclick="changeSong('andre_hazes_bloed_zweet_tranen.mp3')">Bloed zweet en tranen</li>
                 </ul>
-                <audio controls>
-                    <source src="../assets/media/audio/Augurk.mp3" type="audio/ogg">
-                    <source src="../assets/media/audio/Rob-de-nijs-banger-hart.mp3" type="audio/ogg">
-                    <source src="../assets/media/audio/doe-maar-liever-dan-lief.mp3" type="audio/mpeg">
-                    <source src="../assets/media/audio/andre-hazes-bloed-zweet-tranen.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                  </audio>
+                <audio id="audioPlayer" controls>
+                    <source id="playingSong" src="../assets/media/audio/Augurk.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
         </main>
     </body>
