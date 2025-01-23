@@ -9,7 +9,8 @@ const pageNames = {
     'music': 'Muziek',
     'vr-holodeck': 'VR-Holodeck',
     'wellness-fitness': 'Wellness en Fitness',
-    'cameras': 'Camera feeds'
+    'cameras': 'Camera feeds',
+    'library': 'Library'
 };
 
 function pager(page) {
@@ -56,6 +57,9 @@ function pager(page) {
             break;
         case 'cameras':
             window.location.href = './cameras/'
+            break;
+        case 'library':
+            window.location.href = './library/'
             break;
         default:
             console.warn('Page not found');
