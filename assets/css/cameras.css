@@ -1,0 +1,66 @@
+main {
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0 0 12px 6px var(--color-tertiary);
+    box-sizing: border-box;
+    border-radius: 32px;
+    background: var(--color-tertiary);
+}
+
+@font-face {
+    font-family: 'Azeret Mono';
+    src: url('../font/Azeret-Mono.ttf') format('truetype');
+}
+
+#back {
+    font-family: 'Azeret Mono';
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    border: 4px solid #000;
+    cursor: pointer;
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 600ms ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back:hover {
+    background-color: #dc6aff;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-left: 80px;
+}
+
+.video-container {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.camera-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}

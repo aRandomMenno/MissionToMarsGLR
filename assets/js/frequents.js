@@ -8,7 +8,8 @@ const pageNames = {
     'games': 'Games',
     'music': 'Muziek',
     'vr-holodeck': 'VR-Holodeck',
-    'wellness-fitness': 'Wellness en Fitness'
+    'wellness-fitness': 'Wellness en Fitness',
+    'cameras': 'Camera feeds'
 };
 
 function pager(page) {
@@ -52,6 +53,9 @@ function pager(page) {
             break;
         case 'wellness-fitness':
             window.location.href = './wellness-fitness/';
+            break;
+        case 'cameras':
+            window.location.href = './cameras/'
             break;
         default:
             console.warn('Page not found');

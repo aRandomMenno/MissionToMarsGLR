@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl-NL" id="app">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="../assets/css/pages.css">
+        <link rel="stylesheet" href="../assets/css/cameras.css">
+        <script src="../assets/js/inactive.js" defer></script>
+
+        <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="../assets/logo.png">
+
+        <title>M2M - Camera feeds</title>
+    </head>
+    <body>
+        <button id="back" onclick="window.location.href = '..'">
+            <svg width="36px" height="36px" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 10L8 14L6 14L-2.62268e-07 8L6 2L8 2L8 6L16 6L16 10L8 10Z" fill="#000000" />
+            </svg>
+        </button>
+        <main>
+            <div class="video-grid">
+                <div class="video-container">
+                    <video autoplay loop muted>
+                        <source src="../assets/media/videos/placeholder-16x9.mp4" type="video/mp4">
+                    </video>
+                    <span class="camera-label">Camera 1</span>
+                </div>
+                <div class="video-container">
+                    <video autoplay loop muted>
+                        <source src="../assets/media/videos/placeholder-16x9.mp4" type="video/mp4">
+                    </video>
+                    <span class="camera-label">Camera 2</span>
+                </div>
+                <div class="video-container">
+                    <video autoplay loop muted>
+                        <source src="../assets/media/videos/placeholder-16x9.mp4" type="video/mp4">
+                    </video>
+                    <span class="camera-label">Camera 3</span>
+                </div>
+                <div class="video-container">
+                    <video autoplay loop muted>
+                        <source src="../assets/media/videos/placeholder-16x9.mp4" type="video/mp4">
+                    </video>
+                    <span class="camera-label">Camera 4</span>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
